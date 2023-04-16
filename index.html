@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        font-family: poppins;
+    }
+
+
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        padding: 0px 170px;
+        background-color: #286bce;
+        width: 100%;
+        height: 60px;
+    }
+
+    .list {
+        display: flex;
+    }
+
+    .list ul {
+        display: flex;
+        margin-right: 310px;
+        margin-top: 15px;
+    }
+
+    .list ul li {
+        list-style: none;
+    }
+
+    .list ul li a {
+        position: relative;
+        text-decoration: none;
+        padding: 0px 20px;
+        color: white;
+    }
+
+    .list ul li a:hover {
+        color: #000000;
+    }
+
+    .logo {
+        color: #fcfcfc;
+        margin-top: 15px;
+        margin-right: 490px;
+    }
+
+    .name {
+        color: white;
+        font-size: 25px;
+    }
+
+    .pa {
+        margin-top: -20px;
+        /* font-size: 15px; */
+    }
+
+    .img {
+        margin-top: -90px;
+    }
+
+    /* .headset{
+        margin-left: 600px;
+        margin-top: -440px;
+    }  */
+    .laptop {
+        margin-right: 700px;
+        margin-top: -470px;
+    }
+
+    .banner {
+        padding-top: 100px;
+    }
+
+    .about {
+        /* position: absolute; */
+        margin-top: 250px;
+        width: 100%;
+        height: 550px;
+        background-color: transparent;
+        color: white;
+    }
+
+    .about-me {
+        margin-left: 950px;
+        padding-top: 80px;
+    }
+    .ab{font-size:20px}
+
+    .client {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .stroke {
+        height: 6px;
+        width: 100px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        margin-top: -20px;
+    }
+
+    .about-logo {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-logo h3 {
+        margin-left: 10px;
+        margin-top: 1px;
+    }
+
+    .about-imgm {
+        margin-top: -490px;
+        margin-left: 180px;
+    }
+
+    .portfolio {
+        width: 100%;
+        height: 800px;
+        background-color: transparent;
+        /* position: relative; */
+        margin-top: -20px;
+    }
+
+    .portfolio-img {
+        margin-left: 230px;
+        margin-top: 80px;
+        border-radius: 2px;
+    }
+
+    .portfolio-img1 {
+        margin-top: 80px;
+        margin-left: 260px;
+        border-radius: 2px;
+    }
+
+    .portfolio-img2 {
+        margin-left: 230px;
+        margin-top: 40px;
+        border-radius: 2px;
+    }
+
+    .portfolio-img5 {
+        margin-top: 40px;
+        margin-left: 260px;
+        border-radius: 2px;
+    }
+
+    .box {
+        height: 180px;
+        width: 250px;
+        background-color: #286bce;
+        margin-top: 300PX;
+        margin-left: 300px;
+        border-radius: 5px;
+    }
+
+    .testi {
+        position: relative;
+        top: -110px;
+        right: 10px;
+    }
+
+    .box1 a {
+        text-decoration: none;
+    }
+
+    .contact {
+
+        height: 320px;
+        width: 76%;
+        background-color: #000000;
+        /* border: 1px solid #286bce; */
+        box-shadow: 0px 10px 30px #286ace3d;
+        margin-top: 180px;
+        border-radius: 5px;
+    }
+    .c textarea{
+        margin-left: -310px;
+        position: relative;
+        top: -30px;
+    }
+
+    .contact2 {
+        margin-left: 850px;
+        margin-top: -120px;
+    }
+    .c h1{
+        padding-left: 40px;
+    }
+
+    .inp {
+        height: 40px;
+        width: 300px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid #286bce;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .inpu {
+        height: 100px;
+        width: 300px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid #286bce;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .send {
+        margin-right: 150px;
+        margin-top: 20px;
+        height: 30px;
+        width: 80px;
+        background-color: #286bce;
+        border-radius: 5px;
+    }
+
+    .send:hover {
+        background-color: #ffffff;
+        transition: 1s;
+
+    }
+
+    .footer-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-list ul {
+        display: flex;
+        margin-left: 670px;
+    }
+
+    .footer-list ul li {
+        list-style: none;
+    }
+
+    .footer-list ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 10px;
+    }
+
+    .footer {
+        margin-top: 80px;
+        /* margin-left: 500px; */
+    }
+    
+   @media (max-width:600px)
+  {
+    body{
+        overflow-x: hidden;
+    }
+  .nav-bar{
+    background-color: #286bce;
+    position: absolute;
+    width: 100%;
+    
+  }
+    
+.name h1{
+font-size: 22px;
+}  
+.name p{
+font-size: 17px;
+}
+.img img{
+width: 400px;
+margin-left:-40px;
+margin-top: 30px;
+overflow: hidden;
+}
+.laptop img{
+    
+width: 0px;}
+.ab{
+    
+    margin-left: -815px;}
+    .client{
+  font-size: 0px;}
+  .mi{
+ position: absolute;
+ left: 25px;
+ top: 480px;
+ font-size: 14px;
+  }
+  .about-imgm img{
+    width: 0%;
+  }
+  .stroke{
+    width: 0px;
+  }
+  .about-logo img{
+    width: 0%;
+  }
+  .about-logo h3{
+    font-size: 0px;
+  }
+  .portfolio h1{
+    margin-top: -280px;
+    font-size: 15px;
+  }
+  .portfolio-img img{
+     width: 0px;
+  }
+  .portfolio-img h2{
+    font-size: 0px;
+  }
+  .portfolio-img1 img{
+    width: 200px;
+    margin-left: -430px;
+    margin-top: -70px;
+  }
+  .portfolio-img1 h2{
+    margin-left: -270px;
+    font-size: 15px;
+  }
+  .portfolio {
+        width: 100%;
+        height: 800px;
+        background-color: transparent;
+        /* position: relative; */
+        margin-top: -20px;
+    }
+  .portfolio-img2 img{
+    width: 0px;
+  }
+  .portfolio-img2 h2{
+    font-size: 0px;
+  }
+  .portfolio-img5 img{
+    width: 0px;
+  }
+  .portfolio-img5 h2{
+    font-size: 0px;
+  }
+  .contact{
+    margin-top: -550px;
+  }
+  .contact2{
+    position: absolute;
+    left:-770px;
+    margin-top: -40px;
+  }
+  .c h1{
+    font-size: 0px;
+  }
+  .c textarea{
+    position: relative;
+        left: 165px;
+  }
+  .inp {
+        height: 20px;
+        width: 150px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid #286bce;
+        border-radius: 5px;
+        position: relative;
+        left: 20px;
+    }
+
+    .inpu {
+        height: 70px;
+        width: 150px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid #286bce;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .send {
+        position: relative;
+        right: -107px;
+        margin-top: 20px;
+        height: 25px;
+        width: 70px;
+        background-color: #286bce;
+        border-radius: 5px;
+    }
+    .footer-list{
+        margin-left: -640px;
+        margin-top: 260px;
+    }
+    .footer h2{
+        font-size: 0px;
+    }
+    .footer-img img{
+        width: 0px;
+    }
+    .footer-img3 img{
+        width: 0PX;
+    }
+    .footer-img2 img{
+        width: 0px;
+    }
+    .work{
+        width: 0px;
+    }
+}
+
+
+    
+</style>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div>
+                <h1 class="logo"> Miracle</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li> <a href="#Home"> Home</a></li>
+                    <li> <a href="#About"> About</a></li>
+                    <li> <a href="#Portfolio"> Portfolio</a></li>
+                    <li> <a href="#Contact"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <center>
+            <div class="banner" id="Home">
+                <div class="name">
+                    <h1> Hi, I AM <span style="color: #286bce;"> MIRACLE</span></h1>
+                    <p class="pa"> web developer and a creative designer</p>
+                </div>
+                <div class="img">
+                    <img src="./img/3d.png" alt="" width="750px">
+                </div>
+                <p  class="free" style="color:#286bce ; font-size: 22px;margin-top: -20px;">Freelancer</p>
+                <p class="good" style="color: white;margin-top: -25px; font-size:15px;">Let me get you a good website</p>
+                <!-- <div class="headset">
+                    <img src="./img/headset.png" alt=""  width="300px">
+                </div> -->
+                <div class="laptop">
+                    <img src=".//img/laptop.png" alt="" width="300px">
+                </div>
+
+            </div>
+        </center>
+    </section>
+
+    <section>
+        <div class="about" id="About">
+            <div class="about-me">
+                <p class="ab"> <b>About</b> </p>
+                <h1 class="client">I Use <span> Creativity </span>to Get My <br> Clients</h1>
+                <div class="stroke"></div>
+                <p class="mi" style="color: rgb(255, 255, 255);"> I am Micheal Miracle Web Developer and a Crea <br>
+                    tive
+                    Designer. I help brands acheive
+                    compelling- <br> brand
+                    visibility,employing analytical creative th- <br> inking to get the job done. I am proficient at
+                    <br>
+                    transforming
+                    ideas into productive component.
+                </p>
+
+                <div class="about-logo">
+                    <div>
+                        <img src="./img/programing.png" alt="" width="50px">
+                    </div>
+                    <h3>Clean Code</h3>
+                </div>
+            </div>
+            <div class="about-imgm">
+                <img src="./img//44.png" alt="" width="700px">
+            </div>
+    </section>
+
+    <section>
+        <div class="portfolio" id="Portfolio">
+            <center class="po">
+                <h1 class="po" style="color: white; font-size: 20px;">
+                    My Portfolio
+                </h1>
+            </center>
+            <div style="display: flex;">
+                <div class="portfolio-img">
+                    <div>
+                        <img src="./img//dohina.jpg" alt="" width="400px">
+                    </div>
+                    <h2 style="color: white;">Dohina Water</h2>
+                </div>
+                <div class="portfolio-img1">
+                    <div>
+                        <img src=".//img/Untitled-1.jpg" alt="" width="400px">
+                    </div>
+                    <h2 style="color: white;"I replicated Microsoft</h2>
+                </div>
+            </div>
+
+            <div style="display: flex;">
+                <div class="portfolio-img2">
+                    <div>
+                        <img src="./img/port.jpg" alt="" width="400px">
+                    </div>
+                    <h2 style="color: white;">Spice City</h2>
+                </div>
+                <div class="portfolio-img5">
+                    <div>
+                        <img src=".//img/gg.jpg" alt="" width="400px">
+                    </div>
+                    <h2 style="color: white;">Pro Educator</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="work"></div>
+    </section>
+
+    <section>
+        <div id="Contact">
+            <center>
+                <div class="contact">
+                </div>
+            </center>
+            <div class="c">
+                <h1 style="color: white; margin-left: 190px; margin-top: -190px;">Let me work on your next project</h1>
+                <div class="contact2">
+                    <form action="https://formsubmit.co/chukuameke563@gmail.com" method="post">
+                        <input class="inp" type="text" placeholder="name">
+                        <!-- <input class="inpu" type="text" placeholder="Message"> -->
+                        <textarea name="message" class="inpu" placeholder="message"></textarea>
+                    </form>
+                    <button class="send" type="submit">Send</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-list">
+                <ul>
+                    <li> <a href="#Home"> Home</a></li>
+                    <li> <a href="#About"> About</a></li>
+                    <li> <a href="#Portfolio"> Portfolio</a></li>
+                </ul>
+            </div>
+            <h2 style="color: white;margin-left: 240px;">Miracle</h2>
+            <div class="footer-img">
+                <a href="https://www.facebook.com/profile.php?id=100076394696423">
+                    <img src="./img//Facebook PNG Ícone Logo Transparente Sem Fundo.png" alt="" width="115px"
+                        style="margin-top: -90px; margin-left: 600px;">
+                </a>
+            </div>
+            <div class="footer-img3">
+                <a href="https://wa.me/+2348158350842">
+                    <img src="./img/whatsapp.png" alt="" width="110px"
+                        style="position: absolute; top: 2598px; left: 780px;">
+                </a>
+            </div>
+            <div class="footer-img2">
+                <a href="https://twitter.com/Teckmove/status/163449379951706496?s=20">
+                    <img src=".//img/twitter copy.png" alt="" width="130px"
+                        style="position: relative; top: -123px; left: 950px;">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
