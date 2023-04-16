@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Miracle Micheal</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -19,6 +19,7 @@
         padding: 0px;
         background-color: black;
         font-family: poppins;
+        overflow-x: hidden;
     }
 
 
@@ -102,7 +103,7 @@
     }
 
     .about-me {
-        margin-left: 950px;
+        margin-left: 930px;
         padding-top: 80px;
     }
     .ab{font-size:20px}
@@ -133,7 +134,7 @@
 
     .about-imgm {
         margin-top: -490px;
-        margin-left: 180px;
+        margin-left: 160px;
     }
 
     .portfolio {
@@ -145,26 +146,26 @@
     }
 
     .portfolio-img {
-        margin-left: 230px;
+        margin-left: 290px;
         margin-top: 80px;
         border-radius: 2px;
     }
 
     .portfolio-img1 {
         margin-top: 80px;
-        margin-left: 260px;
+        margin-left: 180px;
         border-radius: 2px;
     }
 
     .portfolio-img2 {
-        margin-left: 230px;
+        margin-left: 290px;
         margin-top: 40px;
         border-radius: 2px;
     }
 
     .portfolio-img5 {
         margin-top: 40px;
-        margin-left: 260px;
+        margin-left: 185px;
         border-radius: 2px;
     }
 
@@ -196,6 +197,7 @@
         box-shadow: 0px 10px 30px #286ace3d;
         margin-top: 180px;
         border-radius: 5px;
+        
     }
     .c textarea{
         margin-left: -310px;
@@ -204,7 +206,7 @@
     }
 
     .contact2 {
-        margin-left: 850px;
+        margin-left: 880px;
         margin-top: -120px;
     }
     .c h1{
@@ -245,6 +247,9 @@
         transition: 1s;
 
     }
+    .space{
+        font-size: 0px;
+    }
 
     .footer-list {
         display: flex;
@@ -273,25 +278,35 @@
     
    @media (max-width:600px)
   {
-    body{
-        overflow-x: hidden;
-    }
+    
+     body{
+        margin: 0px;
+        padding: 0px;
+     }
+    br{
+    display: none;
+   }
   .nav-bar{
     background-color: #286bce;
     position: absolute;
-    width: 100%;
+    width: 0%;
     
   }
     
 .name h1{
-font-size: 22px;
+font-size: 30px;
+position: relative;
+left: 150px;
 }  
 .name p{
-font-size: 17px;
+font-size: 20px;
+position: relative;
+left: 150px;
 }
 .img img{
 width: 400px;
-margin-left:-40px;
+position: relative;
+left: 150px;
 margin-top: 30px;
 overflow: hidden;
 }
@@ -300,20 +315,24 @@ overflow: hidden;
 width: 0px;}
 .ab{
     
-    margin-left: -815px;}
+    position: absolute;
+  left: -100px;
+}
     .client{
   font-size: 0px;}
   .mi{
  position: absolute;
- left: 25px;
+ left: 125px;
  top: 480px;
- font-size: 14px;
+ font-size: 0px;
   }
   .about-imgm img{
     width: 0%;
   }
   .stroke{
     width: 0px;
+    position: relative;
+    right:500px
   }
   .about-logo img{
     width: 0%;
@@ -324,6 +343,7 @@ width: 0px;}
   .portfolio h1{
     margin-top: -280px;
     font-size: 15px;
+    margin-left:250px;
   }
   .portfolio-img img{
      width: 0px;
@@ -332,8 +352,8 @@ width: 0px;}
     font-size: 0px;
   }
   .portfolio-img1 img{
-    width: 200px;
-    margin-left: -430px;
+    width: 400px;
+    margin-left: -246px;
     margin-top: -70px;
   }
   .portfolio-img1 h2{
@@ -346,6 +366,7 @@ width: 0px;}
         background-color: transparent;
         /* position: relative; */
         margin-top: -20px;
+        margin-right: -30px;
     }
   .portfolio-img2 img{
     width: 0px;
@@ -360,12 +381,14 @@ width: 0px;}
     font-size: 0px;
   }
   .contact{
-    margin-top: -550px;
+    margin-top: -350px;
+    margin-left: 130px;
+    width: 400px;
   }
   .contact2{
     position: absolute;
-    left:-770px;
-    margin-top: -40px;
+    left:-570px;
+    margin-top: -20px;
   }
   .c h1{
     font-size: 0px;
@@ -405,24 +428,37 @@ width: 0px;}
         border-radius: 5px;
     }
     .footer-list{
-        margin-left: -640px;
+        margin-left: -390px;
         margin-top: 260px;
     }
     .footer h2{
         font-size: 0px;
     }
     .footer-img img{
-        width: 0px;
+        width: 100px;
+        position: relative;
+        left: -150px;
+        top: 100px;
     }
     .footer-img3 img{
-        width: 0PX;
+        width:0px;
+        
     }
     .footer-img2 img{
         width: 0px;
+        
     }
     .work{
         width: 0px;
     }
+    .space{
+        color: #ffffff;
+    }
+    
+}
+.go{
+    /* position: relative;
+    left: 150px; */
 }
 
 
@@ -455,9 +491,11 @@ width: 0px;}
                 <div class="img">
                     <img src="./img/3d.png" alt="" width="750px">
                 </div>
-                <p  class="free" style="color:#286bce ; font-size: 22px;margin-top: -20px;">Freelancer</p>
-                <p class="good" style="color: white;margin-top: -25px; font-size:15px;">Let me get you a good website</p>
-                <!-- <div class="headset">
+                <div class="go">
+                <p  class="free" style="color:#286bce ; font-size: 30px;margin-top: -20px;">Freelancer</p>
+                <p class="good" style="color: white;margin-top: -25px; font-size:20px;">Let me get you a good website</p>
+            </div>
+             <!-- <div class="headset">
                     <img src="./img/headset.png" alt=""  width="300px">
                 </div> -->
                 <div class="laptop">
@@ -474,7 +512,7 @@ width: 0px;}
                 <p class="ab"> <b>About</b> </p>
                 <h1 class="client">I Use <span> Creativity </span>to Get My <br> Clients</h1>
                 <div class="stroke"></div>
-                <p class="mi" style="color: rgb(255, 255, 255);"> I am Micheal Miracle Web Developer and a Crea <br>
+                <p class="mi" style="color: rgb(255, 255, 255);"> I am Micheal Miracle Web Developer and a Crea <br class="space">
                     tive
                     Designer. I help brands acheive
                     compelling- <br> brand
@@ -483,6 +521,7 @@ width: 0px;}
                     transforming
                     ideas into productive component.
                 </p>
+                <p class="space">I am Micheal Miracle web Developer and a creative designer. <br> i help brands acheive compelling brand visibility. <br> I am proficient at transforming ideas into productive component.</p>
 
                 <div class="about-logo">
                     <div>
@@ -579,13 +618,13 @@ width: 0px;}
             <div class="footer-img3">
                 <a href="https://wa.me/+2348158350842">
                     <img src="./img/whatsapp.png" alt="" width="110px"
-                        style="position: absolute; top: 2598px; left: 780px;">
+                        style="position: absolute; top: 2628px; left: 780px;">
                 </a>
             </div>
             <div class="footer-img2">
                 <a href="https://twitter.com/Teckmove/status/163449379951706496?s=20">
                     <img src=".//img/twitter copy.png" alt="" width="130px"
-                        style="position: relative; top: -123px; left: 950px;">
+                        style="position: relative; top: -123px; left: 880px;">
                 </a>
             </div>
         </div>
